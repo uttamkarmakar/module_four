@@ -1,0 +1,22 @@
+uuid: e43ecf06-7097-41f2-8743-a059175c80f4
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: product_pattern
+label: 'Product Pattern'
+type: 'canonical_entities:node'
+pattern: '/products/[node:title]'
+selection_criteria:
+  de4f503c-790a-4c0b-9ea4-111f798c5adb:
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: de4f503c-790a-4c0b-9ea4-111f798c5adb
+    context_mapping:
+      node: node
+    bundles:
+      product_name: product_name
+selection_logic: and
+weight: -5
+relationships: {  }
