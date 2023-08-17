@@ -1,0 +1,4 @@
+services:
+  custom_api.product_data:
+    class: Drupal\custom_api\ProductDataService
+    arguments: ['@entity_type.manager']

@@ -1,0 +1,6 @@
+read-more:
+  js:
+    js/read-more.js: {}
+  css:
+    theme:
+      css/read-more.css: {}

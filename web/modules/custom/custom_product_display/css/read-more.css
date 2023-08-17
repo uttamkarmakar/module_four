@@ -1,0 +1,12 @@
+.read-more-toggle .show-less-button {
+    display: none;
+  }
+  
+  .read-more-toggle.expanded .read-more-button {
+    display: none;
+  }
+  
+  .read-more-toggle.expanded .show-less-button {
+    display: inline-block;
+  }
+  
