@@ -1,0 +1,19 @@
+<div class="product-detail-page">
+  <h2>{{ product_title }}</h2>
+  <div class="product-description">{{ product_description }}</div>
+  <div class="product-price">{{ product_price}}</div>
+  <div class="user-name">{{ user_name }}</div>
+  
+  <div class="product-images">
+    {% if images %}
+      <h3>{{ 'Product Image(s)'}}</h3>
+      <ul>
+        {% for image in images %}
+          <li>
+            <img src="{{ image.url }}" alt="{{ image.alt }}" title="{{ image.title }}">
+          </li>
+        {% endfor %}
+      </ul>
+    {% endif %}
+  </div>
+</div>

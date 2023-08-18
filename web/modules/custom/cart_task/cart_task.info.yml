@@ -1,0 +1,5 @@
+name: Cart Task
+type: module
+description: This module provides the add to cart options and more.
+package: Custom
+core_version_requirement: ^10

@@ -1,0 +1,5 @@
+name: Custom Product Display
+type: module
+description: Module to change the body field appearance
+package: Custom
+core_version_requirement: ^9 || ^10

@@ -1,0 +1,8 @@
+uuid: 2f7bb271-19ca-4026-b5e0-2b3f32ef49f9
+langcode: en
+status: true
+dependencies: {  }
+name: Category
+vid: category
+description: 'This Vocabulary holds the types of products available in the site.'
+weight: 0

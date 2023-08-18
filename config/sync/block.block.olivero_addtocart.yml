@@ -1,0 +1,37 @@
+uuid: bd604477-1657-4954-b4cc-951228a4674e
+langcode: en
+status: true
+dependencies:
+  module:
+    - cart_task
+    - system
+    - user
+  theme:
+    - olivero
+id: olivero_addtocart
+theme: olivero
+region: content_below
+weight: 0
+provider: null
+plugin: cart_task
+settings:
+  id: cart_task
+  label: 'ADD TO CART'
+  label_display: visible
+  provider: cart_task
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '/products/*'
+  user_role:
+    id: user_role
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'
+    roles:
+      authenticated: authenticated
+      content_editor: content_editor
+      administrator: administrator
+      content_admin: content_admin
+      customer: customer

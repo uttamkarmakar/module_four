@@ -1,0 +1,25 @@
+<?php
+
+  /**
+ * Implements hook_preprocess_node().
+ */
+function custom_product_display_preprocess_node(&$variables) {
+  $node = $variables['node'];
+  
+  $node = $variables['node'];
+
+  // Check if the node type is the desired content type.
+  if ($node->getType() == 'product_name') {
+    // Get the full body text.
+    $full_body = $node->get('body')->value;
+    // Get the trimmed body text.
+    $trimmed_body = $node->get('body')->summary;
+   
+    // Add the body texts to variables.
+    $variables['full_body'] = $full_body;
+    $variables['trimmed_body'] = $trimmed_body;
+
+    $variables['#attached']['library'][] = 'custom_product_display/read-more';
+
+}
+}

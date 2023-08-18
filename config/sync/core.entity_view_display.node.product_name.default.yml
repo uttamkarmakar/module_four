@@ -1,0 +1,77 @@
+uuid: ffcc4901-8912-4500-9412-3e8330af2dc3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.product_name.body
+    - field.field.node.product_name.field_category
+    - field.field.node.product_name.field_images
+    - field.field.node.product_name.field_price
+    - field.field.node.product_name.field_product_name
+    - node.type.product_name
+  module:
+    - image
+    - readmore
+    - user
+id: node.product_name.default
+targetEntityType: node
+bundle: product_name
+mode: default
+content:
+  body:
+    type: readmore
+    label: hidden
+    settings:
+      trim_length: 50
+      trim_on_break: true
+      show_readmore: true
+      show_readless: true
+      ellipsis: true
+      wordsafe: false
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  field_category:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 105
+    region: content
+  field_images:
+    type: image
+    label: above
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 104
+    region: content
+  field_price:
+    type: number_decimal
+    label: above
+    settings:
+      thousand_separator: ''
+      decimal_separator: .
+      scale: 2
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 103
+    region: content
+  field_product_name:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden: {  }

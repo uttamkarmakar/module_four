@@ -1,0 +1,7 @@
+custom_api.list_nodes:
+  path: '/api/products'
+  defaults:
+    _controller: '\Drupal\custom_api\Controller\CustomApiController::listNodes'
+    _format: json
+  requirements:
+    _access: 'TRUE'
