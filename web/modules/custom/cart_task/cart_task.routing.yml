@@ -1,0 +1,14 @@
+cart_task.add_cart:
+  path: ''
+  defaults:
+    _form: '\Drupal\cart_task\Form\AddToCartForm'
+    _title: 'Add to Cart'
+  requirements:
+    _permission: 'access content'
+cart_task.thanks:
+  path: '/thank-you'
+  defaults:
+    _title: 'Thank you'
+    _controller: '\Drupal\cart_task\Controller\CartTaskController::build'
+  requirements:
+    _permission: 'access content'

@@ -1,0 +1,22 @@
+<?php
+
+  /**
+   * Implements hook_theme() to register the button template.
+   */
+function cart_task_theme($existing, $type, $theme, $path) {
+    return [
+      'product_detail_page' => [
+        'variables' => [
+          'product_title' => NULL,
+          'product_description' => NULL,
+          'product_price' => NULL,
+          'user_name' => NULL,
+          'images' => [],
+        ],
+      ],
+    ];
+  }
+  
+  
+
+
